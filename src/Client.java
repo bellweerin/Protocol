@@ -52,6 +52,7 @@ public class Client {
             System.out.println(answer);
 
             if(c>0){
+                System.out.println("Do you want to fortune again?");
                 System.out.println("0 : No\n" +
                         "1 : Yes");
                 x=sc.nextInt();

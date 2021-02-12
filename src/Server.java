@@ -27,9 +27,7 @@ public class Server {
 
             if(cat == 1){
                 day = Integer.parseInt(a[1]);
-                System.out.println(day);
                 type = Integer.parseInt(a[2]);
-                System.out.println(type);
                 answer = Day.fortune(day,type);
                 System.out.println(answer);
                 ps.println(answer);
@@ -37,9 +35,7 @@ public class Server {
             }
             else if(cat == 2){
                 number = Integer.parseInt(a[1]);
-                System.out.println(number);
                 month = Integer.parseInt(a[2]);
-                System.out.println(month);
                 answer = Zodiac.fortune(number,month);
                 System.out.println(answer);
                 ps.println(answer);
@@ -52,6 +48,7 @@ public class Server {
             }
 
             if(count>0){
+
                 if(sc.hasNext()){
                     x = sc.nextInt();
                     System.out.println(x);
@@ -69,20 +66,7 @@ public class Server {
 
 
 
-//        day = sc.nextInt();
-//        System.out.println(day);
-//        type = sc.nextInt();
-//        System.out.println(type);
-//        if(cat == 1){
-//            day = sc.nextInt();
-//            type = sc.nextInt();
-//            answer=Day.fortune(day,type);
-//        }
-//        else if(cat == 2){
-//            number = sc.nextInt();
-//            month = sc.nextInt();
-//            answer=Zodiac.fortune(day,type);
-//        }
+
 
 
 
