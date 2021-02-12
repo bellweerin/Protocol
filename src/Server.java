@@ -14,17 +14,17 @@ public class Server {
 
         while (true){
             s = ss.accept();
+            PrintStream ps = new PrintStream(s.getOutputStream());
+            Scanner sc = new Scanner(s.getInputStream());
             if(count==0) {
                 System.out.println("client connect");
             }
-            Scanner sc = new Scanner(s.getInputStream());
-            data = sc.nextLine();
+            data = sc.next();
             System.out.println(data);
+
             a = data.split("-");
             cat = Integer.parseInt(a[0]);
-            System.out.println(cat);
-
-            PrintStream ps = new PrintStream(s.getOutputStream());
+//            System.out.println(cat);
 
             if(cat == 1){
                 day = Integer.parseInt(a[1]);
@@ -34,6 +34,7 @@ public class Server {
                 answer = Day.fortune(day,type);
                 System.out.println(answer);
                 ps.println(answer);
+                count++;
             }
             else if(cat == 2){
                 number = Integer.parseInt(a[1]);
@@ -43,11 +44,25 @@ public class Server {
                 answer = Zodiac.fortune(number,month);
                 System.out.println(answer);
                 ps.println(answer);
+                count++;
             }
-            count++;
-            x = sc.nextInt();
-            if(x==0){
+            else{
+                answer = "There is no category.";
+                ps.println(answer);
                 break;
+            }
+
+            if(count>0){
+                if(sc.hasNext()){
+                    x = sc.nextInt();
+                    System.out.println(x);
+                    if(x==0) {
+                        break;
+                    }
+                    else {
+                        System.out.println("again");
+                    }
+                }
             }
 
         }

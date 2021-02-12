@@ -7,23 +7,15 @@ public class Client {
         int type,day,cat,number,month,c=0,x;
         String answer,data;
         Socket s = new Socket("localhost",9999);
-        Scanner sc = new Scanner(System.in);
         System.out.println("How is your destiny today?");
-        PrintStream ps = new PrintStream(s.getOutputStream());
+        Scanner sc = new Scanner(System.in);
+
         while(true){
-            if(c>0){
-                System.out.println("0 : No\n" +
-                        "1 : Yes");
-                x=sc.nextInt();
-                if(x==0){
-                    break;
-                }
-            }
+            PrintStream ps = new PrintStream(s.getOutputStream());
             System.out.println("What type do you want to fortune?");
             System.out.println("1 : Birthday\n" +
                     "2 : Zodiac");
             cat = sc.nextInt();
-            System.out.println(cat);
             if(cat == 1){
                 System.out.println("1 : Sunday\n" +
                         "2 : Monday\n" +
@@ -39,7 +31,6 @@ public class Client {
                 System.out.println("Choose what you want to know :");
                 type = sc.nextInt();
                 data = cat + "-" +day + "-" + type;
-                System.out.println(data);
                 ps.println(data);
                 c++;
             }
@@ -48,12 +39,28 @@ public class Client {
                 number = sc.nextInt();
                 month = sc.nextInt();
                 data = cat + "-" + number + "-" + month;
+                System.out.println(data);
                 ps.println(data);
                 c++;
+            }
+            else {
+                ps.println();
+                break;
             }
             Scanner sc1 = new Scanner(s.getInputStream());
             answer = sc1.nextLine();
             System.out.println(answer);
+
+            if(c>0){
+                System.out.println("0 : No\n" +
+                        "1 : Yes");
+                x=sc.nextInt();
+                ps.println(x);
+                if(x==0){
+                    break;
+                }
+            }
+
         }
 
 
