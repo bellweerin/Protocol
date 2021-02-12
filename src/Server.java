@@ -21,7 +21,6 @@ public class Server {
             }
             data = sc.next();
             System.out.println(data);
-
             a = data.split("-");
             cat = Integer.parseInt(a[0]);
 //            System.out.println(cat);
@@ -64,7 +63,6 @@ public class Server {
                     }
                 }
             }
-
         }
 
 

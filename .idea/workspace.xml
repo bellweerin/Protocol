@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d9613e-87d2-4c32-8bcc-87c9e22626fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Augur/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Augur/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Augur/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Augur/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +32,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -117,6 +112,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613115180307" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1613119108146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613119108146" />
     <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1613113545002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
